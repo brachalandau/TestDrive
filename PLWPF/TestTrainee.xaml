@@ -1,0 +1,19 @@
+﻿<Window x:Class="PLWPF.TestTrainee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="TestTrainee" Height="400" Width="450">
+    <Grid Margin="0,0,0,-16.333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="407*"/>
+            <ColumnDefinition Width="39*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="button" Content="הרשמה לטסט" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,112,0,0" VerticalAlignment="Top" Width="376" Height="61" Click="regester"/>
+        <Button x:Name="button1" Content="תוצאות הטסט" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,197,0,0" VerticalAlignment="Top" Width="376" Height="61" Click="results"/>
+        <Image HorizontalAlignment="Left"  Width="195"  Margin="10,332,0,23" Source="testdriveGray/testdriveWhite.png"/>
+    </Grid>
+</Window>

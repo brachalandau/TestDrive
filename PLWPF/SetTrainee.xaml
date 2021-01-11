@@ -1,0 +1,114 @@
+﻿<Window x:Class="PLWPF.SetTrainee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="set trainee" Height="600" Width="800">
+    <Grid>
+        <Label x:Name="setTrainee" Content="עדכון פרטים"  FontSize="30" Foreground="#2B6CA3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="302,10,236,0" FontWeight="Bold" Width="254"/>
+
+        <StackPanel x:Name="grid2" Margin="439,40,10,0" >
+            <StackPanel Orientation="Horizontal" Height="31" Width="192" HorizontalAlignment="Right" Margin="0,0,-14,0">
+                <TextBox x:Name="studentIdTextBox" MaxLength="9" Height="18" Margin="0,10,0,0" Text="{Binding Id, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":.ת.ז" Foreground="#019EAA" Margin="20,2,0,0" RenderTransformOrigin="4.758,0.797" Width="40" FontSize="12" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="29" Width="214" HorizontalAlignment="Right" Margin="0,0,0,0">
+                <TextBox x:Name="studentFirstNameTextBox" HorizontalAlignment="Right" Height="18" Margin="30,0,0,8" Text="{Binding FirstName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Bottom" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":שם פרטי" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Right" Margin="5,4,0,2" VerticalAlignment="Center" Height="31" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="238" HorizontalAlignment="Right" Margin="0,-10,0,-5">
+                <TextBox x:Name="studentLastNameTextBox" HorizontalAlignment="Right" Height="18" Margin="40,10,0,9" Text="{Binding LastName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":שם משפחה" FontSize="12" Foreground="#019EAA" HorizontalAlignment="Right" Margin="5,4,0,10" VerticalAlignment="Center" Height="24" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="38" Margin="145,-8,0,0">
+                <TextBox x:Name="Emain" HorizontalAlignment="Right" Height="18" Margin="20,10,0,9" Text="{Binding Email, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":דואל" FontSize="12" Foreground="#019EAA" HorizontalAlignment="Right" Margin="10,0,10,5" VerticalAlignment="Bottom" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="186" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <ComboBox x:Name="TraineeGenderComboBox"  SelectedItem="{Binding TraineeGender}" Margin="0,5" Height="20" Width="124">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFE6E6E6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <Label Content=":מין" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Left" Margin="36,4,0,7" VerticalAlignment="Center" Height="26" Width="29" FontWeight="Bold" RenderTransformOrigin="0.379,0.443"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="218" HorizontalAlignment="Right" Margin="0,-5,0,0">
+                <DatePicker x:Name="traineeBirthDate"  DisplayDateStart="01.01.1940" DisplayDateEnd="01.31.2003" HorizontalAlignment="Left" Margin="20,1,0,7" SelectedDate="{Binding BirthDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Background="#FFE6E6E6"/>
+                <Label Content=":תאריך לידה" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Left" Margin="15,2,0,10" VerticalAlignment="Center" Height="25" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="203" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <TextBox x:Name="traineePhone" MaxLength="9" Height="18" Margin="25,8,0,0" Text="{Binding PhoneNumber, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":פלאפון" Foreground="#019EAA" FontSize="12" Margin="10,0,0,10" RenderTransformOrigin="4.758,0.797" Width="52" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="192" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <TextBox x:Name="street1" MaxLength="9" Height="18" Margin="20,6,0,0"  VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":רחוב" Foreground="#019EAA" FontSize="12" Margin="18,0,0,10" RenderTransformOrigin="4.758,0.797" Width="42" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="223" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <TextBox x:Name="buildingNumber1" MaxLength="9" Height="18" Margin="30,4,0,0" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":מס' בניין" Foreground="#019EAA" FontSize="12" Margin="17,0,0,10" RenderTransformOrigin="4.758,0.797" Width="61" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="174" HorizontalAlignment="Right" Margin="0,-13,0,0">
+                <TextBox x:Name="town1" MaxLength="9" Height="18" Margin="15,4,0,0" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":עיר" FontSize="12" Foreground="#019EAA" Margin="12,0,0,0" RenderTransformOrigin="4.758,0.797" Width="33" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="267" HorizontalAlignment="Right" Margin="0,-17,0,0">
+                <ComboBox x:Name="TypeOfVehicle"  SelectedItem="{Binding Vehicle}" Margin="35,5" Height="20" Width="124">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFE6E6E6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <Label Content=":דרגת הרישיון" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Left" Margin="-7,2,0,0" VerticalAlignment="Center" Width="87" Height="35" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="255" HorizontalAlignment="Right" Margin="0,-12,0,0">
+                <ComboBox x:Name="TypeOfGearControl"  SelectedItem="{Binding Gear}" Margin="20,5" Height="20" Width="124">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFE6E6E6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <Label Content=":סוג הרישיון" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Left" Margin="20,2,0,5" VerticalAlignment="Center" Height="30" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="263" HorizontalAlignment="Right" Margin="0,-6,0,0">
+                <TextBox x:Name="schoolName" MaxLength="9" Height="18" Margin="30,4,0,0" Text="{Binding DrivingSchoolName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":בית הספר לנהיגה" Foreground="#019EAA" FontSize="12" Margin="7,0,0,0" RenderTransformOrigin="4.758,0.797" Width="142" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="212" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <TextBox x:Name="TeacherName" MaxLength="9" Height="18" Margin="0,4,0,0" Text="{Binding TeacherName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":שם המורה" Foreground="#019EAA" FontSize="12" Margin="25,0,0,0" RenderTransformOrigin="4.758,0.797" Width="72" FontWeight="Bold" Height="37" VerticalAlignment="Top" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="256" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <TextBox x:Name="numberOfClasses" MaxLength="9" Height="18" Margin="0,4,0,0" Text="{Binding NumberOfClasses, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":מס' שיעורים" Foreground="#019EAA" FontSize="12" Margin="35,0,0,0" RenderTransformOrigin="4.758,0.797" Width="105" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="149" HorizontalAlignment="Right" Margin="0,-15,0,0">
+                <CheckBox x:Name="isMarriedCheckBox" Content="" HorizontalAlignment="Left" IsChecked="{Binding Isrealicitzian, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="40,10,0,10" VerticalAlignment="Center" Background="#FFE6E6E6" Height="17" Width="23"/>
+                <Label Content="תושב ישראל" Foreground="#019EAA" FontSize="12" Margin="10,0,0,0" FontWeight="Bold"/>
+            </StackPanel>
+            <!--<StackPanel Orientation="Horizontal" Height="37" Width="255" HorizontalAlignment="Right" Margin="0,0,0,0">
+                <ComboBox x:Name="regionCountry"  SelectedItem="{Binding RegionCountry}" Margin="0,5" Width="124">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFE6E6E6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <Label Content=":ארץ מוצא" Foreground="#019EAA" FontSize="16" Margin="30,0,0,0" FontWeight="Bold"/>
+            </StackPanel>-->
+        </StackPanel>
+        <Image x:Name="image"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="234" Source="testdriveGray/testdriveWhite.png" Margin="12,511,0,0"/>
+        <Button x:Name="addButton" Content="סיום ועדכון" 
+			Foreground="#FFCCCCCC" Background="#FF019EAA" FontWeight="Bold" FontSize="20" Click="endProsses_Click" Margin="308,461,306,50"/>
+    </Grid>
+</Window>

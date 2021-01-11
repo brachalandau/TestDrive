@@ -1,0 +1,15 @@
+﻿<Window x:Class="PLWPF.MainDataGridTester"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="maindatagridtester" Height="417.386" Width="450">
+    <Grid Margin="0,-126,0,17">
+        <Button x:Name="button" Content="הצגה לפי מורי נהיגה" Click="show1" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,159,0,0" VerticalAlignment="Top" Width="376" Height="61"/>
+        <Button x:Name="button1" Content="הצגה לפי בית ספר" Click="show2" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,266,0,0" VerticalAlignment="Top" Width="376" Height="61"/>
+        <Button x:Name="button3" Content="הצגה לפי כמות טסטים"  Click="show3" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold"  HorizontalAlignment="Left" Margin="31,368,0,0" VerticalAlignment="Top" Width="376" Height="60" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left"  Width="195"  Margin="10,408,0,-52.667" Source="testdriveGray/testdriveWhite.png"/>
+    </Grid>
+</Window>

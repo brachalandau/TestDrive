@@ -1,0 +1,177 @@
+﻿<Window x:Class="PLWPF.SetTester"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="Set tester" Height="600" Width="800">
+    <Grid>
+        <Button x:Name="button" Content="אשר מערכת" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" Margin="163,344,0,0" Width="95" Height="27" VerticalAlignment="Top" Click="setHour"/>
+        <Label x:Name="addTester" Content="עדכון פרטים"  FontSize="30" Foreground="#2B6CA3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="310,10,228,0" FontWeight="Bold" Width="254"/>
+        <Grid  Margin="0,40,402,141">
+            <Rectangle  Fill="#FFE6E6E6" HorizontalAlignment="Left" Height="220" Margin="79,80,0,0" VerticalAlignment="Top" Width="264"/>
+            <Grid x:Name="matrix" RenderTransformOrigin="0.623,0.518" Width="400" Height="250" Margin="10,43,-20,95">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="126*"/>
+                    <ColumnDefinition Width="48*"/>
+                    <ColumnDefinition Width="58*"/>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="51*"/>
+                    <ColumnDefinition Width="67*"/>
+                </Grid.ColumnDefinitions>
+                <CheckBox x:Name="rowColum11" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="21,15,0,0" VerticalAlignment="Top" Grid.Column="4" Grid.Row="1" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum12" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="18,15,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="1" Height="15" Width="16" />
+                <CheckBox x:Name="rowColum13" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="25,15,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum14" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="16,15,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum15" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="87,15,0,0" VerticalAlignment="Top" Grid.Row="1" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum21" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="21,18,0,0" VerticalAlignment="Top" Grid.Column="4" Grid.Row="2" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum22" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="18,18,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="2" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum23" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="25,18,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="2" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum24" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="17,18,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum25" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="87,18,0,0" VerticalAlignment="Top" Grid.Row="2" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum31" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="21,17,0,0" VerticalAlignment="Top" Grid.Column="4" Grid.Row="3" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum32" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="18,17,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="3" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum33" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="25,17,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="3" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum34" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="17,17,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="3" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum35" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="87,17,0,0" VerticalAlignment="Top" Grid.Row="3" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum41" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="21,16,0,0" VerticalAlignment="Top" Grid.Column="4" Grid.Row="4" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum42" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="18,16,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="4" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum43" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="25,16,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="4" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum44" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="17,16,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="4" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum45" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="87,16,0,0" VerticalAlignment="Top" Grid.Row="4" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum51" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="21,17,0,0" VerticalAlignment="Top" Grid.Column="4" Grid.Row="5" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum52" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="18,17,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="5" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum53" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="25,17,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="5" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum54" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="17,17,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="5" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum55" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="87,17,0,0" VerticalAlignment="Top" Grid.Row="5" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum61" Foreground="#FF2B6CA3" BorderBrush="White" Margin="21,14,11,0" VerticalAlignment="Top" Grid.Column="4" Grid.Row="6" Height="15"/>
+                <CheckBox x:Name="rowColum62" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="18,14,0,0" VerticalAlignment="Top" Grid.Column="3" Grid.Row="6" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum63" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="25,14,0,0" VerticalAlignment="Top" Grid.Column="2" Grid.Row="6" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum64" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="17,14,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="6" Height="15" Width="16"/>
+                <CheckBox x:Name="rowColum65" Foreground="#FF2B6CA3" BorderBrush="White" HorizontalAlignment="Left" Margin="87,14,0,0" VerticalAlignment="Top" Grid.Row="6" Height="15" Width="16"/>
+                <TextBlock x:Name="textBlock1"  FontSize="12" Foreground="#019EAA" FontWeight="Bold" Text="ראשון" HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="4" Height="16" Width="33"/>
+                <TextBlock x:Name="textBlock2" Text="שני" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" Margin="16,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="3" Height="14" Width="41" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="textBlock3" Text="שלישי" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" Margin="15,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Height="16" Width="34"/>
+                <TextBlock x:Name="textBlock4" Text="רביעי" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Height="14" Width="43" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="textBlock5" Text="חמישי" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" Margin="76,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" Height="16" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="textBlock6" Text="9:00" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="22,15,0,0" Grid.Row="1" Grid.Column="5" Height="16" Width="24"/>
+                <TextBlock x:Name="textBlock7" Text="10:00" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="16,16,0,0" Grid.Column="5" Grid.Row="2" Height="16" Width="31"/>
+                <TextBlock x:Name="textBlock8" Text="11:00" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="16,10,0,0" Grid.Column="5" Grid.Row="3" Height="16" Width="31"/>
+                <TextBlock x:Name="textBlock9" Text="12:00" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,10,0,0" Grid.Column="5" Grid.Row="4" Height="16" Width="31"/>
+                <TextBlock x:Name="textBlock10" Text="13:00" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,10,0,0" Grid.Column="5" Grid.Row="5" Height="16" Width="31"/>
+                <TextBlock x:Name="textBlock11" Text="14:00" FontSize="12" Foreground="#019EAA" FontWeight="Bold" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="15,14,0,0" Grid.Column="5" Grid.Row="6" Height="16" Width="34"/>
+            </Grid>
+        </Grid>
+        <StackPanel x:Name="grid1" Margin="448,40,10,0" >
+            <StackPanel Orientation="Horizontal" Height="31" Width="192" HorizontalAlignment="Right" Margin="0,0,-14,0">
+                <TextBox x:Name="studentIdTextBox" MaxLength="9" Height="18" Margin="0,10,0,0" Text="{Binding Id, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":.ת.ז" Foreground="#019EAA" Margin="20,2,0,0" RenderTransformOrigin="4.758,0.797" Width="40" FontSize="12" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="29" Width="214" HorizontalAlignment="Right" Margin="0,0,0,0">
+                <TextBox x:Name="studentFirstNameTextBox" HorizontalAlignment="Right" Height="18" Margin="30,0,0,8" Text="{Binding FirstName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Bottom" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":שם פרטי" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Right" Margin="5,4,0,2" VerticalAlignment="Center" Height="31" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="238" HorizontalAlignment="Right" Margin="0,-10,0,-5">
+                <TextBox x:Name="studentLastNameTextBox" HorizontalAlignment="Right" Height="18" Margin="40,10,0,9" Text="{Binding LastName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":שם משפחה" FontSize="12" Foreground="#019EAA" HorizontalAlignment="Right" Margin="5,4,0,10" VerticalAlignment="Center" Height="24" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="38" Margin="145,-8,0,0">
+                <TextBox x:Name="Emain" HorizontalAlignment="Right" Height="18" Margin="20,10,0,9" Text="{Binding Email, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":דואל" FontSize="12" Foreground="#019EAA" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="186" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <ComboBox x:Name="TesterGenderComboBox"  SelectedItem="{Binding TraineeGender}" Margin="0,5" Height="20" Width="124">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFE6E6E6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <Label Content=":מין" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Left" Margin="36,4,0,7" VerticalAlignment="Center" Height="26" Width="29" FontWeight="Bold" RenderTransformOrigin="0.379,0.443"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="218" HorizontalAlignment="Right" Margin="0,-5,0,0">
+                <DatePicker x:Name="traineeBirthDate"  DisplayDateStart="01.01.1940" DisplayDateEnd="01.31.2003" HorizontalAlignment="Left" Margin="20,1,0,7" SelectedDate="{Binding BirthDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Background="#FFE6E6E6"/>
+                <Label Content=":תאריך לידה" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Left" Margin="0,2,0,10" VerticalAlignment="Center" Height="25" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="203" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <TextBox x:Name="traineePhone" MaxLength="9" Height="18" Margin="25,8,0,0" Text="{Binding PhoneNumber, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":פלאפון" Foreground="#019EAA" FontSize="12" Margin="10,0,0,10" RenderTransformOrigin="4.758,0.797" Width="52" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="192" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <TextBox x:Name="street1" MaxLength="9" Height="18" Margin="20,6,0,0"  VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":רחוב" Foreground="#019EAA" FontSize="12" Margin="18,0,0,10" RenderTransformOrigin="4.758,0.797" Width="42" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="223" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <TextBox x:Name="buildingNumber1" MaxLength="9" Height="18" Margin="30,4,0,0" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":מס' בניין" Foreground="#019EAA" FontSize="12" Margin="17,0,0,10" RenderTransformOrigin="4.758,0.797" Width="61" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="174" HorizontalAlignment="Right" Margin="0,-13,0,0">
+                <TextBox x:Name="town1" MaxLength="9" Height="18" Margin="15,4,0,0" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":עיר" FontSize="12" Foreground="#019EAA" Margin="12,0,0,0" RenderTransformOrigin="4.758,0.797" Width="33" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="267" HorizontalAlignment="Right" Margin="0,-17,0,0">
+                <ComboBox x:Name="TesterTypeOfVehicle"  SelectedItem="{Binding Vehicle}" Margin="35,5" Height="20" Width="124">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFE6E6E6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <Label Content=":דרגת הרישיון" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Left" Margin="-7,2,0,0" VerticalAlignment="Center" Width="87" Height="35" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="255" HorizontalAlignment="Right" Margin="0,-12,0,0">
+                <ComboBox x:Name="TesterTypeOfGearControl"  SelectedItem="{Binding Gear}" Margin="20,5" Height="20" Width="124">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFE6E6E6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <Label Content=":סוג הרישיון" Foreground="#019EAA" FontSize="12" HorizontalAlignment="Left" Margin="20,2,0,5" VerticalAlignment="Center" Height="30" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="267" HorizontalAlignment="Right" Margin="0,-6,0,0">
+                <TextBox x:Name="schoolName" MaxLength="9" Height="18" Margin="30,4,0,0" Text="{Binding YearsOfExperience, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120" Background="#FFE6E6E6"/>
+                <Label Content=":מס' שנות ניסיון" Foreground="#019EAA" FontSize="12" Margin="25,0,0,0" RenderTransformOrigin="4.758,0.797" Width="97" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Margin="10,-12,0,0">
+                <TextBox x:Name="TeacherName" MaxLength="9" Height="23" Margin="55,4,0,0" Text="{Binding MaxTestsPerWeek, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="70" Background="#FFE6E6E6"/>
+                <Label Content=":מס' המבחנים המקסימלי בשבוע" Foreground="#019EAA" FontSize="12" Margin="0,0,0,0" RenderTransformOrigin="4.758,0.797" Width="189" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="336" HorizontalAlignment="Right" Margin="0,-8,0,0">
+                <TextBox x:Name="numberOfClasses" MaxLength="9" Height="23" Margin="53,4,0,0" Text="{Binding MaxDistance, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="82" Background="#FFE6E6E6"/>
+                <Label Content=":מרחק מקסימלי מביתך לטסט" Foreground="#019EAA" FontSize="12" Margin="35,0,0,0" RenderTransformOrigin="4.758,0.797" Width="224" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="37" Width="149" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <CheckBox x:Name="isMarriedCheckBox" Content="" HorizontalAlignment="Left" IsChecked="{Binding Isrealicitzian, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="40,10,0,10" VerticalAlignment="Center" Background="#FFE6E6E6" Height="17" Width="23"/>
+                <Label Content="תושב ישראל" Foreground="#019EAA" FontSize="12" Margin="10,0,0,0" FontWeight="Bold"/>
+            </StackPanel>
+            <!--<StackPanel Orientation="Horizontal" Height="37" Width="255" HorizontalAlignment="Right" Margin="0,0,0,0">
+                <ComboBox x:Name="regionCountry"  SelectedItem="{Binding RegionCountry}" Margin="0,5" Width="124">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFE6E6E6" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                </ComboBox>
+                <Label Content=":ארץ מוצא" Foreground="#019EAA" FontSize="16" Margin="30,0,0,0" FontWeight="Bold"/>
+            </StackPanel>-->
+        </StackPanel>
+        <Image x:Name="image"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="234" Source="testdriveGray/testdriveWhite.png" Margin="12,511,0,0"/>
+        <Button x:Name="addButton" Content="סיום ועדכון" IsEnabled="False"
+			Foreground="#FFCCCCCC" Background="#FF019EAA" FontWeight="Bold" FontSize="20" Click="endProsses_Click" Margin="308,461,306,50"/>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="PLWPF.trainee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLWPF"
+        mc:Ignorable="d"
+        Title="Trainee" Height="561.003" Width="450">
+    <Grid Margin="0,0,0,31.333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="407*"/>
+            <ColumnDefinition Width="39*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="button" Content="הרשמה למערכת" Click="addTrainee" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,32,0,0" VerticalAlignment="Top" Width="376" Height="61"/>
+        <Button x:Name="button1" Content="עדכון פרטים"  Click="setTrainee" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,109,0,0" VerticalAlignment="Top" Width="376" Height="61"/>
+        <Button x:Name="button3" Click="print" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" Content="הצגת פרטים" HorizontalAlignment="Left" Margin="31,182,0,0" VerticalAlignment="Top" Width="376" Height="60"/>
+        <Button x:Name="button2" Content="מחיקה מהמערכת" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,258,0,0" VerticalAlignment="Top" Width="376" Height="60" Click="deleteTrainee"/>
+        <Button x:Name="button4" Content="טסטים" Click="tests" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,332,0,0" VerticalAlignment="Top" Width="376" Height="60"/>
+        <Button x:Name="button5" Content="הטסטרים שלנו" Click="dataGrid" Background="#FF019EAA" Foreground="#CCCCCC" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="31,407,0,0" VerticalAlignment="Top" Width="376" Height="60"/>
+
+        <Image HorizontalAlignment="Left"  Width="195"  Margin="10,428,0,-72.666" Source="testdriveGray/testdriveWhite.png"/>
+    </Grid>
+</Window>
